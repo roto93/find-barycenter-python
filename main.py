@@ -26,7 +26,7 @@ def find_barycenter(fn, x, accuracy, x_left, x_right):
     old_left = x_left
     old_right = x_right
     while (np.abs(left-right) > accuracy):
-        print(left-right, x_center)
+        print(f'test for x={x_center}, the difference is {np.abs(left-right)}')
         if left > right:
             old_right = x_center
             x_center = (old_right + old_left) * 0.5
